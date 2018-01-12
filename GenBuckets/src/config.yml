@@ -1,0 +1,50 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                GenBucket Configuration               | #
+# +------------------------------------------------------+ #
+############################################################
+
+#The type of bucket that will be needed to use GenBucket (water/lava)
+bucket-type: 'lava'
+#Speed (in ticks) 1 block generates. Note that 20 ticks is 1 second.
+genning-speed: 20
+#Allow sponge to stop genning (true/false)
+allow-sponging: true
+#The radius in which the sponge takes effect ('Allow Sponging' must be set to true for this to work)
+sponge-radius: 2
+#When should GenBucket take effect? (always/shifting/not shifting)
+generate: 'not shifting'
+#Charge players every time they place a GenBucket (true/false)
+charge-players: true
+#The amount players will be charged for placing a GenBucket ('Charge Players' has to be set to true for this to take affect)
+charge-amount: 50
+#Stop the genning of blocks outside world border (1.8+)
+check-for-border: true
+#Allow the continuation of genning once a sponge is broken
+continue-after-sponge-broken: false
+#Let whichever liquid you pick stay after placing. Setting this to false makes it so it sets the liquid to air.
+keep-liquid: true
+#The prefix that will be in front of all messages sent by GenBucket
+message-prefix: '&c&lGen&6&lBucket &b� '
+
+#All of the messages sent by GenBucket
+messages:
+  #The message sent to players after reloading the configuration
+  configuration-reloaded: '&aThe configuration has been reloaded!'
+  #The message sent to players when executing a command they do not have the permission to use
+  no-permission-command: '&cYou do not have permission to execute this command!'
+  #The message sent to players when attempting to place a GenBucket when they do not have the permission to
+  no-permission-place: '&cYou do not have permission to use GenBuckets!'
+  #The message sent to players when attempting to place a GenBucket anywhere else except the top of a block
+  invalid-placing: '&cYou must place on top of blocks to use GenBuckets!'
+  #The message sent to players when attempting to place a GenBucket when they do not have enough money ('Charge Players' has to be set to true for this to take affect)
+  not-enough-money: '&cYou do not have enough money to place a GenBucket!'
+  #The message sent to players when successfully placing a GenBucket when 'Charge Players' is set to true
+  money-taken: '&a$%amount% has been taken from your balance!'
+
+############################################################
+# +------------------------------------------------------+ #
+# |                      Author(s):                      | #
+# |                      - EyesOfRinn                    | #
+# +------------------------------------------------------+ #
+############################################################
